@@ -9,7 +9,7 @@ import com.revature.repositories.EmployeeDAOImpl;
 public class EmployeeService {
 
 	// Our EmployeeService DEPENDS on the EmployeeDAOImpl...
-	private static EmployeeDAO edao = new EmployeeDAOImpl();
+	public static EmployeeDAO edao = new EmployeeDAOImpl();
 	
 	
 	public static boolean insert(Employee e) {
