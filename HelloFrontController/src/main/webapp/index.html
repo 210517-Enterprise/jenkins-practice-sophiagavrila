@@ -3,35 +3,59 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+
+
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	crossorigin="anonymous">
+
+
 </head>
 <body>
 
-<h1>Welcome Employee!</h1>
-<h3>Please login below</h3>
+	<div class="jumbotron jumbotron-fluid">
 
-<form method="POST" action="login">
-	
-	<label>Username:</label>
-	<input type="text" name="username" placeholder="enter a username please">
-	
-	<br>
-	
-	<label>Password:</label> 
-	<input type="password" name="password" placeholder="enter a username please">
-	
-	<button type="submit">Submit!</button>
-</form>
+		<div class="container">
+
+			<h1 class="display-4">Welcome Employee!</h1>
+			<p class="lead">Please login below</p>
+
+		</div>
+
+	</div>
 
 
-<form method="GET" action="employees">
+	<div class="container-fluid">
 
-	<p>See all the Employees in the system</p>
-	<input type="submit" value="click me"></input>
+		<form method="POST" action="login">
 
-</form>
+			<div class="form-group">
+
+				<label>Username:</label> <input type="text" name="username"
+					placeholder="enter a username please">
+			</div>
+
+			<div class="form-group">
+
+				<label>Password:</label> <input type="password" name="password"
+					placeholder="enter a password please">
 
 
+			</div>
 
+			<button type="submit" class="btn btn-primary">Submit!</button>
+		</form>
+
+
+		<form method="GET" action="employees">
+
+			<p>See all the Employees in the system</p>
+			<input type="submit" value="click me"></input>
+
+		</form>
+
+	</div>
 
 </body>
 </html>
